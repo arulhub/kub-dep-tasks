@@ -5,7 +5,7 @@
   tasks:
     - name: clone repository
       git: >
-        repo=ssh://git@github.com:arulhub/kub-dep-tasks.git          
+        repo=https://github.com/arulhub/kub-dep-tasks.git          
         dest=/opt/kub-demo
     - name: Deploy tasks API
       shell: |
