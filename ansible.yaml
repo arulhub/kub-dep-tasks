@@ -6,7 +6,7 @@
     - name: clone repository
       git: >
         repo=https://github.com/arulhub/kub-dep-tasks.git          
-        dest=/opt/kub-demo
+        dest=/opt/kub-demo/kub-dep-tasks
     - name: Deploy tasks API
       shell: |
-        kubectl apply -f=/opt/kub-demo/tasks.yaml
+        kubectl apply -f=/opt/kub-demo/kub-dep-tasks/tasks.yaml
