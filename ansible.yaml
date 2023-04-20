@@ -1,6 +1,7 @@
 ---
 - name: Deploy to K8s Cluster
-  hosts: webservers   
+  hosts: webservers  
+  user: root 
   tasks:
     - name: clone repository
       git: >
