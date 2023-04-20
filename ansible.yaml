@@ -2,6 +2,10 @@
 - name: Deploy to K8s Cluster
   hosts: webservers   
   tasks:
-    - name: Deploy auth API
+    - name: clone repository
+      git: >
+        repo=ssh://git@github.com/someone/example-repo.git          
+        dest=/opt/kub-demo
+    - name: Deploy tasks API
       shell: |
-        kubectl apply -f=tasks.yaml
+        kubectl apply -f=/opt/kub-demo/tasks.yaml
