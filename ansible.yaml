@@ -7,6 +7,6 @@
       git: >
         repo=https://github.com/arulhub/kub-dep-tasks.git          
         dest=/opt/kub-demo/kub-dep-tasks
-    - name: Deploy tasks API
+    - name: Deploy Tasks API
       shell: |
         kubectl apply -f=/opt/kub-demo/kub-dep-tasks/tasks.yaml

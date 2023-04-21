@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
   if (err.code) {
     code = err.code;
   }
-
+  console.log('Test');
   if (err.message) {
     message = err.message;
   }
